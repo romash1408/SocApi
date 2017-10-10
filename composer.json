@@ -1,0 +1,44 @@
+{
+    "name": "romash1408/SocApi",
+    "type": "library",
+    "description": "Api for finding posts by hashtag in social networks",
+    "keywords": [
+        "Social",
+        "hash search",
+        "api"
+    ],
+    "homepage": "https://github.com/romash1408/SocApi",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Dubinin",
+            "email": "romash1408@yanex.ru",
+            "homepage": "https://romash1408.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocApi\\": "src"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

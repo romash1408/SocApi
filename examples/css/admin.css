@@ -1,0 +1,33 @@
+.container{
+    width: 980px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.post{
+	position: relative;
+	height: 320px;
+	margin-bottom: 20px;
+	padding-left: 340px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.post img{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 320px;
+	object-fit: contain;
+	margin-right: 20px;
+}
+
+.post p{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,body-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+}
+
+.post[data-status="0"] > h4 > a{color: #C3006F;}
+.post[data-status="1"] > h4 > a{color: #A0BE37;}
+.post[data-status="2"] > h4 > a{color: #E3A631;}
+
